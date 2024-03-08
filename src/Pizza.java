@@ -27,23 +27,24 @@ public class Pizza {
     public void addExtraCheese(){
         isExtraCheeseAdded = true;
 //        System.out.println("Extra Cheese Added");
-//        this.Price += this.addExtraCheesePrice;
+        this.Price += this.addExtraCheesePrice;
     }
 
     public void addExtraToppings(){
         isExtraToppingsAdded = true;
 //        System.out.println("Extra Toppings Added");
-//        this.Price += this.addExtraToppingsPrice;
+        this.Price += this.addExtraToppingsPrice;
     }
 
     public void takeAway(){
         isTakeaway = true;
 //        System.out.println("Item is ready to Take Away");
-//        this.Price += this.takeAwayPrice;
+        this.Price += this.takeAwayPrice;
     }
 
     public void getBill(){
         String Bill = "";
+        System.out.println("Pizza :" + " " + basePizzaPrice + "\n");
         if(isExtraCheeseAdded){
             Bill += "Extra Cheese Added : " + addExtraCheesePrice + "\n";
         }
